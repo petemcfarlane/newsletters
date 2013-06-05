@@ -1,0 +1,10 @@
+<?xml version="1.0"?>
+<info>
+	<id>newsletters</id>
+	<name>Newsletters</name>
+	<description>Collection of newsletters to send to members</description>
+	<version>0.7</version>
+	<licence>AGPL</licence>
+	<author>Pete McFarlane</author>
+	<require>4</require>
+</info>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="ISO-8859-1" ?>
+<database>
+	<name>*dbname*</name>
+	<create>true</create>
+	<overwrite>false</overwrite>
+	<charset>utf8</charset>
+
+	<table>
+		<name>*dbprefix*newsletters</name>
+		<declaration>
+			<field>
+				<name>id</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<default>0</default>
+				<autoincrement>1</autoincrement>
+				<length>4</length>
+			</field>
+
+			<field>
+				<name>subject</name>
+				<type>text</type>
+				<notnull>true</notnull>
+				<length>150</length>
+			</field>
+
+			<field>
+				<name>content</name>
+				<type>clob</type>
+				<notnull>false</notnull>
+			</field>
+
+			<field>
+				<name>created</name>
+				<type>timestamp</type>
+				<notnull>true</notnull>
+				<default>0000-00-00 00:00:00</default>
+			</field>
+
+			<field>
+				<name>author</name>
+				<type>text</type>
+				<notnull>true</notnull>
+				<length>64</length>
+			</field>
+
+			<field>
+				<name>modified</name>
+				<type>timestamp</type>
+				<notnull>false</notnull>
+			</field>
+
+			<field>
+				<name>modifier</name>
+				<type>text</type>
+				<notnull>false</notnull>
+				<length>64</length>
+			</field>
+
+			<field>
+				<name>sent</name>
+				<type>timestamp</type>
+				<notnull>false</notnull>
+			</field>
+
+			<field>
+				<name>sender</name>
+				<type>text</type>
+				<notnull>false</notnull>
+				<length>64</length>
+			</field>
+
+			<field>
+				<name>member_lists</name>
+				<type>text</type>
+				<notnull>false</notnull>
+				<length>100</length>
+			</field>
+
+		</declaration>
+	</table>
+
+	<table>
+		<name>*dbprefix*newsletters_sending</name>
+		<declaration>
+			<field>
+				<name>id</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<default>0</default>
+				<autoincrement>1</autoincrement>
+				<length>5</length>
+			</field>
+
+			<field>
+				<name>email</name>
+				<type>text</type>
+				<notnull>true</notnull>
+				<length>150</length>
+			</field>
+
+			<field>
+				<name>newsletter</name>
+				<type>integer</type>
+				<notnull>true</notnull>
+				<length>5</length>
+			</field>
+
+			<field>
+				<name>status</name>
+				<type>integer</type>
+				<length>1</length>
+				<default>0</default>
+			</field>
+
+			<field>
+				<name>queued</name>
+				<type>timestamp</type>
+				<notnull>false</notnull>
+			</field>
+
+			<field>
+				<name>queued_by</name>
+				<type>text</type>
+				<notnull>false</notnull>
+				<length>64</length>
+			</field>
+
+		</declaration>
+	</table>
+
+</database>

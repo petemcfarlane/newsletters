@@ -1,0 +1,29 @@
+#groups_header {position: fixed;top: 3.5em;height: 2.9em;width: 20em;border-bottom: 1px solid #DDD;border-right: 1px solid #DDD;background: #F8F8F8;box-sizing: border-box;-moz-box-sizing: border-box;}
+#groups_header h1 {	padding: 0 1em;	font-weight: bold;	line-height: 2.9em;}
+#groups_header #create_newsletter {	line-height: normal;float:right;margin: .3em;}
+#newsletters_header {position: fixed;top: 3.5em;left: 25em;right: 0;height: 2.9em;border-bottom: 1px solid #DDD;z-index: 50;background-color: white;box-sizing: border-box;-moz-box-sizing: border-box;}
+#leftcontent, #rightcontent {box-sizing: border-box;-moz-box-sizing: border-box;}
+#leftcontent a {background: #eee;border-bottom:1px solid #ddd;border-top: 1px solid #fff;height: auto;padding: 0.5em 0.8em;color: #666;text-shadow: 0 1px 0 #F8F8F8;font-size: 1.2em;text-decoration: none;width:100%;-moz-box-sizing:border-box;box-sizing: border-box;}
+#leftcontent a:hover,#leftcontent a.active {background-color: #DBDBDB;border-bottom: 1px solid #CCC;border-top: 1px solid #D4D4D4;color: #333;font-weight: bold;}
+button:hover {background-color: white;color: #333;}
+
+/*
+ * form
+ */
+
+input[type="text"], textarea, input[type="file"] {width: 30em;}
+input[type="file"] {border: 0;box-shadow: none;margin: 0;padding: 0;}
+textarea {
+font-family: "Lucida Grande",Arial,Verdana,sans-serif;
+height: 7em;
+background: #F8F8F8;
+vertical-align: middle;
+}
+textarea:hover, textarea:focus, textarea:active {background:#fff;}
+#rightcontent p {margin: 1em 0;}
+.tag {width: auto;padding: .4em;border: 1px solid #DDD;font-weight: bold;cursor: pointer;background: #F8F8F8;color: #555;text-shadow: white 0 1px 0;-moz-box-shadow: 0 1px 1px #fff,0 1px 1px #fff inset;-webkit-box-shadow: 0 1px 1px white,0 1px 1px white inset;-moz-border-radius: .5em;-webkit-border-radius: .5em;border-radius: .5em;margin-right: .5em;}
+
+#html_preview, #text_preview {width: 100%;height: 100%;}
+
+input#subject {width: 30em;}
+fieldset {border: 1px solid #E9E9E9;padding: .5em;margin: .5em;}
